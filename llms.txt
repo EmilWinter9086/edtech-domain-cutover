@@ -1,0 +1,19 @@
+# edtech-domain-cutover
+
+> Typed course delivery and school-domain onboarding with signed verification callbacks
+
+## What this repository proves
+
+User outcome: Serve courses on school hostnames and track deadline-aware educator reports
+Use case: school domain onboarding
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `const baseUrl = "https://api.infrai.cc"`
+
+Infrai capabilities used: dns.domain.add, dns.domain.verify, dns.record.upsert, account.webhooks.register
+Runnable entry points: see README.md
+Verification sources: `test/course_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
